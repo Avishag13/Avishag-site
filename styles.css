@@ -1,0 +1,88 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+pre {
+  margin: 0;
+  padding: 0;
+  white-space: pre-line; /* Respects new lines and spaces */
+  text-align: right; /* Aligns text to the right */
+  font-size: 16px; /* Adjusts the font size */
+}
+
+/* Add a background color and some padding to the page */
+body {
+  font-family: "Almoni Tzar", sans-serif; /* Your custom font */
+  text-align: right; /* Right-aligns text globally */
+  white-space: pre-line; /* Respects new lines and spaces */
+  font-size: 16px; /* Font size, adjust as needed */
+}
+
+/* Style the header */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Style the main content */
+main {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#logo {
+  max-width: 100px; /* Adjust as needed */
+  margin-right: 15px;
+}
+.about-me {
+  text-align: right; /* Aligns text to the right */
+  font-size: 16px; /* Adjusts the font size */
+  font-family: "Almoni Tzar", sans-serif; /* Specifies your custom font */
+}
+
+@font-face {
+  font-family: "Almoni Tzar";
+  src: url("assets/almoni-tzar-aaa-bold.ttf") format("truetype");
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  header,
+  footer {
+    padding: 0.5em;
+  }
+}
+
+/* Media Query for Tablet Devices */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  header,
+  footer {
+    padding: 0.75em;
+  }
+}
+
+/* Media Query for Desktop Devices */
+@media (min-width: 769px) {
+  /* Styles for desktop here, if needed */
+}
