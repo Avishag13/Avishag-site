@@ -11,6 +11,10 @@
     <header>
       <img src="assets/LOGO-insta-שקוף-01.png" alt="My Logo" id="logo" />
     </header>
+    <audio id="myAudio" loop>
+      <source src="assets/ethnic-loop-1-27781.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
     <main>
       <pre class="about-me" dir="rtl">
         בגיל 30 פצחתי בקריירת ריקוד.
@@ -47,5 +51,11 @@
     <footer>
       <p>💃🏽 parvana</p>
     </footer>
+    <script>
+      document.addEventListener("click", function () {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+      });
+    </script>
   </body>
 </html>
