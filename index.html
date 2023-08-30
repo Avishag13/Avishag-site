@@ -52,9 +52,20 @@
       <p>💃🏽 parvana</p>
     </footer>
     <script>
-      document.addEventListener("click", function () {
+      var audio = document.getElementById("myAudio");
+      window.addEventListener("load", function () {
         var audio = document.getElementById("myAudio");
         audio.play();
+      });
+
+      // Add an event listener for clicks on the window
+      window.addEventListener("click", function () {
+        // Check if the audio is paused; if it is, play it, otherwise pause it
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
       });
     </script>
   </body>
