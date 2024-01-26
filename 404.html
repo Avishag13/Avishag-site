@@ -1,55 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl" data-critters-container>
   <head>
-    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404 - Page Not Found</title>
-    <style>
-      html {
-        height: 100%;
-        background-color: #e9ecef;
+    <title>🧡Avishag🧡</title>
+    <base href="/" />
+    <style type="text/css">
+      @font-face {
+        font-family: "Material Icons";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2)
+          format("woff2");
       }
-      body {
-        margin-top: 30%;
-      }
-      .not-found-page {
-        max-width: 600px;
-        background: #fff;
-        padding: 40px;
-        margin: auto;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        text-align: center;
-      }
-
-      .error-icon {
-        font-size: 80px;
-        color: mat.color($drea-website-warn);
-        -webkit-animation: glow 1s ease-in-out infinite alternate;
-        -moz-animation: glow 1s ease-in-out infinite alternate;
-        animation: glow 1s ease-in-out infinite alternate;
-      }
-
-      .not-found-page h1 {
-        color: #333;
-        font-family: Roboto, "Helvetica Neue", sans-serif;
-      }
-
-      .not-found-page a {
-        text-decoration: none;
-        color: mat.color($drea-website-primary);
-        transition: text-shadow 0.3s ease;
-      }
-
-      .not-found-page a:hover {
-        text-shadow: #01264f 1px 0 23px;
+      .material-icons {
+        font-family: "Material Icons";
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: "liga";
+        -webkit-font-smoothing: antialiased;
       }
     </style>
+
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <style>
+      :root {
+        --light-orange: rgba(223, 111, 39, 1);
+        --pale-orange: rgba(248, 176, 118, 1);
+        --dark-orange: rgba(179, 85, 57, 1);
+        --brownish-red: rgba(128, 75, 69, 1);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+      @font-face {
+        font-family: MyCustomFont;
+        src: url(VarelaRound-Regular.25bc3247c9ba0bfe.ttf) format("truetype");
+      }
+      body {
+        font-family: MyCustomFont, sans-serif;
+        line-height: 1.6;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="styles.5b0315efe6ffd675.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="styles.5b0315efe6ffd675.css"
+    /></noscript>
   </head>
   <body>
-    <div class="container not-found-page">
-      <div class="error-icon glow">404</div>
-      <h1>Sorry, the page you are looking for cannot be found.</h1>
-      <a href="/" class="text-highlight-dark">Go Home</a>
-    </div>
+    <app-root></app-root>
+    <script src="runtime.2e53f19d9aad9ee4.js" type="module"></script>
+    <script src="polyfills.450f677ccc8e765b.js" type="module"></script>
+    <script src="scripts.eec2e0b16fa4baeb.js" defer></script>
+    <script src="main.b9460a1d9c5f5526.js" type="module"></script>
   </body>
 </html>
